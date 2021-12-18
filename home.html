@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Home | Toko Sebelah</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- owl carousel css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+</head>
+
+<body style="background-color: #22272B;">
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a>TokoSebelah</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="visit"><a href="profile.html"><i class="far fa-user-circle"></i> Account</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <div class="home" style="background-image: url(assets/img/background.png)" >
+        <h1 class="text">New Bag Collection</h1>
+        <center><button href="" class="tbl-shop">Shop Now</button></center>
+    </div>
+
+     <!-- Best Seller -->
+    <div class="title1">Best Seller</div>
+    <div class="post-container owl-carousel">
+        <div class="post">
+            <div class="image">
+                <img src="assets/img/bag4.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="sold">81k+ sold</div>
+                <a href="#" class="title">Totebag Canvas</a>
+                <h3>Rp 250.000</h3>
+                <button href="#" class="tbl-add">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="image">
+                <img src="assets/img/bag5.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="sold">251k+ sold</div>
+                <a href="#" class="title">Totebag Canvas</a>
+                <h3>Rp 250.000</h3>
+                <button href="#" class="tbl-add">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="image">
+                <img src="assets/img/bag9.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="sold">251k+ sold</div>
+                <a href="#" class="title">Totebag Canvas</a>
+                <h3>Rp 250.000</h3>
+                <button href="#" class="tbl-add">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="image">
+                <img src="assets/img/bag7.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="sold">251k+ sold</div>
+                <a href="#" class="title">Totebag Canvas</a>
+                <h3>Rp 250.000</h3>
+                <button href="#" class="tbl-add">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="image">
+                <img src="assets/img/bag6.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="sold">251+ sold</div>
+                <a href="#" class="title">Totebag Canvas</a>
+                <h3>Rp 250.000</h3>
+                <button href="#" class="tbl-add">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="image">
+                <img src="assets/img/bag12.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="sold">251+ sold</div>
+                <a href="#" class="title">Totebag Canvas</a>
+                <h3>Rp 250.000</h3>
+                <button href="#" class="tbl-add">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+<!-- Jquery cdn link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Owl Carousel js cdn link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.post-container').owlCarousel({
+            pagination: false,
+            autoplay: true,
+            responsive: {
+                0:{
+                    items:1
+                },
+                700:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                },
+                1200:{
+                    items:4
+                },
+            }
+        })
+    });
+</script>
+</body>
+</html>
